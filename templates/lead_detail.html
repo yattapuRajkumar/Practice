@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<a href="{% url 'lead-list' %}">go back</a>
+<h1>this is our lead {{lead.first_name}}</h1>
+<p>the age is : {{lead.age}}</p>
+<p>The agent responsible for this lead {{lead.agent}}</p>
+<a href="{% url 'lead-update' lead.pk %}">Update</a><br><br>
+<a href="{% url 'lead-delete' lead.pk  %}">Delete</a>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'lead-list' %}">go back</a>
+    <h1>this is our lead {{lead.first_name}}</h1>
+    <p>the age is : {{lead.age}}</p>
+    <p>The agent responsible for this lead {{lead.agent}}</p>
+    <a href="{% url 'lead-update' lead.pk %}">Update</a><br><br>
+    <a href="{% url 'lead-delete' lead.pk  %}">Delete</a>
+    
+</body>
+</html> -->
