@@ -15,6 +15,7 @@ def lead_list(request):
     return render(request,'lead_list.html',context)
 
 #this is rajkumar.
+print("this is venkat")
 def lead_detail(request,pk):
     lead=Lead.objects.get(id=pk)
     context={
